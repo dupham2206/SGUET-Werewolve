@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+}
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../Image/background1.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+h5 {
+  text-align: center;
+  background-color: black;
+  color:blanchedalmond
+}
+[data-player] {
+  width: min(16.6vw,20vh);
+  height: min(16.6vw,20vh);
+}
+[data-players] {
+  width: 100vw;
+  height: 25vh;
+  display: grid;
+  grid-template-columns: repeat(3, min(16.6vw,25vh)) auto repeat(3, min(16.6vw,25vh))
+}
+[data-contents] {
+  width: 100vw;
+  height: 45vh;
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+}
+[data-form] {
+  margin: auto;
+}
+[data-cards] {
+  display: grid;
+  grid-template-columns: repeat(4, 25%)
+}
+[data-card] > img {
+  height: min(12vh, 10vw);
+  width: min(12vh, 10vw);
+}
