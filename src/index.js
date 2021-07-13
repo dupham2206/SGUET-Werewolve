@@ -128,10 +128,4 @@ for(let i = 0; i < HTMLimgCard.length; ++i){
         console.log(CurCard)
         return
     })
-    HTMLimgCard[i].addEventListener("mouseover", () => {
-        if(HTMLimgCard[i].innerHTML == '') return
-        hover
-        return
-    })
-
 }
