@@ -29,6 +29,7 @@ var HTMLimgPlayer = document.querySelectorAll("[data-divPlayer]");
 var HTMLimgCard = document.querySelectorAll("[data-card]");
 function submitFormForName() {
     let x = document.forms["formForName"]["fname"].value.toLowerCase()
+    document.forms["formForName"]["fname"].value = ''
     if(CurPlay.length == 12){
         alert("Enough people to play")
         return false
@@ -56,6 +57,7 @@ function submitFormForName() {
 
 function submitFormForCard() {
     let x = document.forms["formForCard"]["fname"].value.toLowerCase()
+    document.forms["formForCard"]["fname"].value = ''
     if(CurCard.length == 12){
         alert("Enough card to play")
         return false
@@ -119,13 +121,11 @@ for(let i = 0; i < HTMLimgCard.length; ++i){
         for(let j = i; j < 11; ++j)
             HTMLimgCard[j].innerHTML = HTMLimgCard[j + 1].innerHTML
         HTMLimgCard[11].innerHTML = ''
-        console.log(CurCard)
         return
     })
     HTMLimgCard[i].addEventListener("click", () => {
         if(HTMLimgCard[i].innerHTML == '') return
         HTMLimgCard[i].style.opacity = 1.3 - HTMLimgCard[i].style.opacity
-        console.log(CurCard)
         return
     })
 }
