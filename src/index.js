@@ -1,15 +1,16 @@
 var dataMember = [
-    {search : "dieuquynh", src : "./Image/Diệu Quỳnh.png", name: "Diệu Quỳnh"},
-    {search : "tiendu", src : "./Image/Du Phạm.jpg", name: "Du Phạm"},
-    {search : "hoangtrung", src : "./Image/Hoàng Trung.jpg", name: "Hoàng Trung"},
-    {search : "vanchien", src : "./Image/Lê Chiến.jpg", name: "Lê Chiến"},
-    {search : "minhtrang", src : "./Image/Minh Trang.jpg", name: "Minh Trang"},
-    {search : "xuanbach", src : "./Image/Ngô Bách.jpg", name: "Xuân Bách"},
-    {search : "thanhthao", src : "./Image/Thanh Thảo.jpg", name: "Thanh Thảo"},
-    {search : "tramy", src : "./Image/Trà My.jpg", name: "Trà My"},
+    {search : "dieuquynhs9", src : "./Image/Diệu Quỳnh.png", name: "Diệu Quỳnh"},
+    {search : "tiendus9", src : "./Image/Du Phạm.jpg", name: "Du Phạm"},
+    {search : "hoangtrungs9", src : "./Image/Hoàng Trung.jpg", name: "Hoàng Trung"},
+    {search : "vanchiens9", src : "./Image/Lê Chiến.jpg", name: "Lê Chiến"},
+    {search : "minhtrangs9", src : "./Image/Minh Trang.jpg", name: "Minh Trang"},
+    {search : "xuanbachs8", src : "./Image/Ngô Bách.jpg", name: "Xuân Bách"},
+    {search : "thanhthaos8", src : "./Image/Thanh Thảo.jpg", name: "Thanh Thảo"},
+    {search : "tramys9", src : "./Image/Trà My.jpg", name: "Trà My"},
     {search : "trunghieus8", src : "./Image/Trung Hiếuu.jpg", name: "Trung Hiếu S8"},
     {search : "trunghieus9", src : "./Image/Trung Hiếu.JPG", name: "Trung Hiếu S9"},
-    {search : "xuanloc", src : "./Image/Xuân Lộc.jpg", name: "Xuân Lộc"},
+    {search : "xuanlocs9", src : "./Image/Xuân Lộc.jpg", name: "Xuân Lộc"},
+    {search : "utloans8", src : "./Image/UtLoan.png", name: "Loan Bùi"}
 ]
 var dataCard = [
     {search : "soi", src : "./Image/Soi.PNG", name: "Sói"},
@@ -78,7 +79,7 @@ function submitFormForCard() {
 
 
 function makeImageInHTMLPlayer(i){
-    HTMLimgPlayer[CurPlay.length - 1].innerHTML = "<img class=\"rounded-circle\" data-player src=\"" + dataMember[i].src + "\"><h5>" + dataMember[i].name + "</h5>"
+    HTMLimgPlayer[CurPlay.length - 1].innerHTML = "<img class=\"rounded-circle\" data-player src=\"" + dataMember[i].src + "\"><h5>" + (CurPlay.length - 1) + "." + dataMember[i].name + "</h5>"
     HTMLimgPlayer[CurPlay.length - 1].style.opacity = 1
 
 }
