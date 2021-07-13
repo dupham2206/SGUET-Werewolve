@@ -23,10 +23,11 @@ var dataCard = [
     {search : "dan", src : "./Image/Dan lang.PNG", name: "Dân Làng"},
     
 ]
-var CurPlay = [];
-var CurCard = [];
-var HTMLimgPlayer = document.querySelectorAll("[data-divPlayer]");
-var HTMLimgCard = document.querySelectorAll("[data-card]");
+var CurPlay = []
+var CurCard = []
+var PlayerWithWhatCard = []
+var HTMLimgPlayer = document.querySelectorAll("[data-divPlayer]")
+var HTMLimgCard = document.querySelectorAll("[data-card]")
 function submitFormForName() {
     let x = document.forms["formForName"]["fname"].value.toLowerCase()
     document.forms["formForName"]["fname"].value = ''
@@ -84,7 +85,7 @@ function makeImageInHTMLPlayer(i){
 
 }
 function makeImageInHTMLCard(i){
-    HTMLimgCard[CurCard.length - 1].innerHTML = "<img src=\"" + dataCard[i].src + "\">"
+    HTMLimgCard[CurCard.length - 1].innerHTML = "<img class=\"img-thumbnail\" src=\"" + dataCard[i].src + "\">"
     HTMLimgCard[CurCard.length - 1].style.opacity = 1;
 }
 
@@ -129,3 +130,42 @@ for(let i = 0; i < HTMLimgCard.length; ++i){
         return
     })
 }
+
+var slideshow = 0
+var start = 0
+var fixedSizePlayer
+HTMLslideshow = document.querySelector("[data-slideshow]")
+function addImagetToSlideShow(i){
+    HTMLslideshow.innerHTML = "<img class=\"rounded-circle\" data-player src=\"" + dataMember[CurPlay[i]].src + "\">"
+    HTMLslideshow.innerHTML += "<img class=\"img-thumbnail\" data-player src=\"" + dataCard[CurCard[PlayerWithWhatCard[i].id]].src + "\">"
+    HTMLslideshow.innerHTML += "<h3>" + dataMember[CurPlay[i]].name + " - " + dataCard[CurCard[PlayerWithWhatCard[i].id]].name + "</h3>"
+}
+function startGame(){
+    if(CurPlay.length != CurCard.length){
+        alert("number of players are not equal number of roles")
+        return
+    }
+    slideshow = 0
+    start = 1
+    PlayerWithWhatCard = []
+    fixedSizePlayer = CurPlay.length
+    for(let i = 0; i < fixedSizePlayer; ++i)
+        PlayerWithWhatCard.push({id: i, valueRandom: Math.random() * 100000})
+    PlayerWithWhatCard.sort((a, b) => (a.valueRandom < b.valueRandom ? -1 : 1))
+    console.log(PlayerWithWhatCard)
+    addImagetToSlideShow(0)
+}
+document.addEventListener("keydown", (event) => {
+    if(start == 0) return
+    if(event.keyCode == 39){ //arrowright
+        if(slideshow == fixedSizePlayer) return;
+        slideshow++;
+        if(slideshow == fixedSizePlayer) HTMLslideshow.innerHTML = ''
+        else addImagetToSlideShow(slideshow)
+    }
+    if(event.keyCode == 37){
+        if(slideshow == 0) return;
+        slideshow--;
+        addImagetToSlideShow(slideshow)
+    }
+})
