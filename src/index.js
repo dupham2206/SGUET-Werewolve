@@ -27,7 +27,6 @@ var CurPlay = [];
 var CurCard = [];
 var HTMLimgPlayer = document.querySelectorAll("[data-divPlayer]");
 var HTMLimgCard = document.querySelectorAll("[data-card]");
-console.log(CurPlay)
 function submitFormForName() {
     let x = document.forms["formForName"]["fname"].value.toLowerCase()
     if(CurPlay.length == 12){
@@ -49,7 +48,6 @@ function submitFormForName() {
             break
         }
     }
-    console.log(CurPlay)
     if(haveAns == 0){
         alert("Not found " + x)
         return false
@@ -79,7 +77,7 @@ function submitFormForCard() {
 
 
 function makeImageInHTMLPlayer(i){
-    HTMLimgPlayer[CurPlay.length - 1].innerHTML = "<img class=\"rounded-circle\" data-player src=\"" + dataMember[i].src + "\"><h5>" + (CurPlay.length - 1) + "." + dataMember[i].name + "</h5>"
+    HTMLimgPlayer[CurPlay.length - 1].innerHTML = "<img class=\"rounded-circle\" data-player src=\"" + dataMember[i].src + "\"><h5>" + (CurPlay.length - 1) + ":" + dataMember[i].name + "</h5>"
     HTMLimgPlayer[CurPlay.length - 1].style.opacity = 1
 
 }
@@ -93,8 +91,17 @@ for(let i = 0; i < HTMLimgPlayer.length; ++i){
         if(HTMLimgPlayer[i].innerHTML == '') return
         HTMLimgPlayer[i].innerHTML = ''
         CurPlay.splice(i, 1)
-        for(let j = i; j < 11; ++j)
-            HTMLimgPlayer[j].innerHTML = HTMLimgPlayer[j + 1].innerHTML
+        for(let j = i; j < 11; ++j){
+            var indexH5 = HTMLimgPlayer[j + 1].innerHTML.indexOf("<h5>")
+            var indexTwoDot = HTMLimgPlayer[j + 1].innerHTML.indexOf(":")
+            if(indexH5 == -1 || indexTwoDot == -1){
+                HTMLimgPlayer[j].innerHTML = '';
+                break;
+            }
+            var fi = HTMLimgPlayer[j + 1].innerHTML.substring(0, indexH5 + 4)
+            var se = HTMLimgPlayer[j + 1].innerHTML.substring(indexTwoDot, HTMLimgPlayer[j + 1].innerHTML.length)
+            HTMLimgPlayer[j].innerHTML = fi + j + se
+        }
         HTMLimgPlayer[11].innerHTML = ''
         return
     })
@@ -110,7 +117,7 @@ for(let i = 0; i < HTMLimgCard.length; ++i){
         HTMLimgCard[i].innerHTML = ''
         CurCard.splice(i, 1)
         for(let j = i; j < 11; ++j)
-                HTMLimgCard[j].innerHTML = HTMLimgCard[j + 1].innerHTML
+            HTMLimgCard[j].innerHTML = HTMLimgCard[j + 1].innerHTML
         HTMLimgCard[11].innerHTML = ''
         console.log(CurCard)
         return
