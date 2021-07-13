@@ -9,7 +9,7 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../Image/background1.jpg") no-repeat center center fixed;
   background-size: cover;
 }
-h5 {
+h5, h3 {
   text-align: center;
   background-color: black;
   color:blanchedalmond
