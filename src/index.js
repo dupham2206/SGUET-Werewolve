@@ -13,7 +13,10 @@ var dataMember = [
     {search : "utloans8", src : "./Image/UtLoan.png", name: "Loan Bùi"},
     {search : "ngoctams8", src : "./Image/TTTam.png", name: "Ngọc Tâm"},
     {search : "thibinhs8", src : "./Image/binhdang.png", name: "Bình Đặng"},
-    {search : "minhbinhs7", src : "./Image/luke.png", name: "Luke Shrek"}
+    {search : "minhbinhs7", src : "./Image/luke.png", name: "Luke Shrek"},
+    {search : "vietdungs8", src : "./Image/npvd.png", name: "Việt Dũng"},
+    {search : "minhhongs8", src : "./Image/lmh.png", name: "Minh Hồng"},
+    {search : "thixuans7", src : "./Image/xuannguyen.png", name: "Xuân Nguyễn"},
 ]
 var dataCard = [
     {search : "soi", src : "./Image/Soi.PNG", name: "Sói"},
