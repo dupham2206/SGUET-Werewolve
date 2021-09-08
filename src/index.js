@@ -18,6 +18,25 @@ var dataMember = [
     {search : "minhhongs8", src : "./Image/lmh.png", name: "Minh Hồng"},
     {search : "thixuans7", src : "./Image/xuannguyen.png", name: "Xuân Nguyễn"},
     {search : "tiendungs4", src : "./Image/thaidung.png", name: "Thái Dũng"},
+    {search : "manhhungs9", src : "./Image/canmanhhung.jpg", name: "Cấn Hùng"},
+    {search : "thaihuys9", src : "./Image/dangthaihuy.jpg", name: "Huy Đặng"},
+    {search : "huutungs8", src : "./Image/hoanghuutung.jpg", name: "Hữu Tùng"},
+    {search : "trungphongs7", src : "./Image/hoangtrungphong.jpg", name: "Trung Phong"},
+    {search : "minhducs9", src : "./Image/leminhduc.png", name: "Lê Minh Đức"},
+    {search : "minhtris8", src : "./Image/nguyenminhtri.png", name: "Minh Trí"},
+    {search : "tanminhs9", src : "./Image/nguyentanminh.jpg", name: "Tấn Minh"},
+    {search : "thanhtams6", src : "./Image/nguyenthanhtam.jpg", name: "Thanh Tâm"},
+    {search : "lanhuongs8", src : "./Image/nguyenthilanhuong.jpg", name: "Lan Hương"},
+    {search : "minhnguyets7", src : "./Image/nguyenthiminhnguyet.jpg", name: "Minh Nguyệt"},
+    {search : "thuphuongs9", src : "./Image/nguyenthithuphuong.png", name: "Phương 9,25"},
+    {search : "congchinhs9", src : "./Image/phamcongchinh.jpg", name: "Công Chính"},
+    {search : "hungcuongs9", src : "./Image/thanhungcuong.jpg", name: "Hùng Cường"},
+    {search : "danghuys9", src : "./Image/tongdanghuy.jpg", name: "Huy Tống"},
+    {search : "duytungs7", src : "./Image/tranduytung.jpg", name: "Duy Tùng"},
+    {search : "hoanglans9", src : "./Image/trannguyenhoanglan.jpg", name: "Hoàng Lan"},
+    {search : "giahuys8", src : "./Image/truonggiahuy.jpg", name: "Trương Gia Huy"},
+
+
 ]
 var dataCard = [
     {search : "soi", src : "./Image/Soi.PNG", name: "Sói"},
