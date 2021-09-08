@@ -34,7 +34,8 @@ var dataMember = [
     {search : "danghuys9", src : "./Image/tongdanghuy.jpg", name: "Huy Tống"},
     {search : "duytungs7", src : "./Image/tranduytung.jpg", name: "Duy Tùng"},
     {search : "hoanglans9", src : "./Image/trannguyenhoanglan.jpg", name: "Hoàng Lan"},
-    {search : "giahuys8", src : "./Image/truonggiahuy.jpg", name: "Trương Gia Huy"},
+    {search : "giahuys8", src : "./Image/truonggiahuy.jpg", name: "Gia Huy"},
+    {search : "tuananhs7", src : "./Image/buituananh.png", name: "Tuấn Anh"},
 
 
 ]
