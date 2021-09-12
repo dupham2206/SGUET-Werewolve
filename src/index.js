@@ -82,6 +82,8 @@ var dataMember = [
     {search : "minhbaos8", src : "./Image/phamminhbao.png", name: "Minh Bảo" },
     {search : "haiyens9", src : "./Image/haiyen.png", name: "Hải Yến" },
     {search : "duchuans4", src : "./Image/phanduchuan.png", name: "Đức Huân" },    
+    {search : "nhatquangs5", src : "./Image/thnq.png", name: "Nhật Quang" },
+    {search : "nhatduongs7", src : "./Image/phamnhatduong.png", name: "Nhật Dương" },    
 ]
 var dataCard = [
     {search : "soi", src : "./Image/Soi.PNG", name: "Sói"},
