@@ -20,11 +20,12 @@
     <div data-divPlayer></div>
     <div data-divPlayer></div>
     <div data-form>
-      <form name="formForName" action="javascript:void(0);" onsubmit="return submitFormForName();return false">
-        <input type="text" name="fname" placeholder="Somebody will play" required>
+      <form autocomplete="off" name="formForName" action="javascript:void(0);" onsubmit="return submitFormForName();return false">
+        <input id = "inputPlayer" type="text" name="fname" placeholder="Somebody will play" onkeyup="showResults(this.value)"  required>
         <input type="submit" value="Submit">
+        <div id="result"></div>
       </form>
-      <form name="formForCard" action="javascript:void(0);" onsubmit="return submitFormForCard();return false">
+      <form autocomplete="off" name="formForCard" action="javascript:void(0);" onsubmit="return submitFormForCard();return false">
         <input type="text" name="fname" placeholder="Some card will be played" required>
         <input type="submit" value="Submit">
       </form>
@@ -71,3 +72,4 @@
 </body>
 
 </html>
+

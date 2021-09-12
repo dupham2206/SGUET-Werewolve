@@ -240,3 +240,29 @@ document.addEventListener("keydown", (event) => {
         addImagetToSlideShow(slideshow)
     }
 })
+
+function autocompleteMatch(input) {
+    var term = [];
+    for (let i = 0; i < dataMember.length; i++) {
+        if(dataMember[i].search.includes(input) == true) term.push(dataMember[i].search)
+    }
+    return term;
+  }
+function showResults(val) {
+    res = document.getElementById("result");
+    res.innerHTML = '';
+    let list = '';
+    if(val == '') return;
+    let terms = autocompleteMatch(val);
+    for (let i = 0; i < terms.length; i++) {
+      list += '<li onclick = "takeThisResult(this.innerHTML)">' + terms[i] + '</li>';
+    }
+    res.innerHTML = '<ul>' + list + '</ul>';
+}
+
+function takeThisResult(value){
+    res = document.getElementById("inputPlayer");
+    res.value = value;
+    res = document.getElementById("result");
+    res.innerHTML = '';
+}

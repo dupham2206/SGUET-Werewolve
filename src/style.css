@@ -41,3 +41,25 @@ h5, h3 {
   height: min(12vh, 10vw);
   width: min(12vh, 10vw);
 }
+
+#result {
+  border: 1px dotted #ccc;
+  padding: 3px;
+}
+#result ul {
+  background-color: white;
+  list-style-type: none;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  height: 100px;
+  width: 170px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+#result ul li {
+  padding: 5px 0;
+}
+#result ul li:hover {
+  background: #eee;
+}
