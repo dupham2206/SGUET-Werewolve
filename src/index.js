@@ -83,7 +83,33 @@ var dataMember = [
     {search : "haiyens9", src : "./Image/haiyen.png", name: "Hải Yến" },
     {search : "duchuans4", src : "./Image/phanduchuan.png", name: "Đức Huân" },    
     {search : "nhatquangs5", src : "./Image/thnq.png", name: "Nhật Quang" },
-    {search : "nhatduongs7", src : "./Image/phamnhatduong.png", name: "Nhật Dương" },    
+    {search : "nhatduongs7", src : "./Image/phamnhatduong.png", name: "Nhật Dương" },
+    {search : "haivans10", src : "./Image/haivan.png", name: "Hải Vân" },
+    {search : "kieuanhs10", src : "./Image/kieuanh.png", name: "Kiều Anh" },
+    {search : "ductans10", src : "./Image/ductan.png", name: "Đức Tân" },
+    {search : "vananhs10", src : "./Image/vananh.png", name: "Vân Anh" },
+    {search : "danghais10", src : "./Image/danghai.png", name: "Đăng Hải" },
+    {search : "quangduys10", src : "./Image/quangduy.png", name: "Quang Duy" },
+    {search : "haanhs10", src : "./Image/haanh.png", name: "Hà Anh" },
+    {search : "ngoclinhs10", src : "./Image/ngoclinh.png", name: "Ngọc Linh" },
+    {search : "nguyencongs10", src : "./Image/nguyencong.png", name: "Nguyễn Công" },
+    {search : "ngocvuongs10", src : "./Image/ngocvuong.png", name: "Ngọc Vượng" },
+    {search : "dieunhats10", src : "./Image/dieunhat.png", name: "Diệu Nhật" },
+    {search : "duychiens10", src : "./Image/duychien.png", name: "Duy Chiến" },
+    {search : "minhquangs10", src : "./Image/minhquang.png", name: "Minh Quang" },
+    {search : "phihungs10", src : "./Image/phihung.png", name: "Phi Hùng" },
+    {search : "khanhlinhs10", src : "./Image/khanhlinh.png", name: "Khánh Linh" },
+    {search : "tiendats10", src : "./Image/tiendat.png", name: "Tiến Đạt" },
+
+
+
+
+
+
+
+
+
+
 ]
 var dataCard = [
     {search : "soi", src : "./Image/Soi.PNG", name: "Sói"},
