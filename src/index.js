@@ -1,4 +1,46 @@
 var dataMember = [
+    {search : "haivans10", src : "./Image/haivan.png", name: "Hải Vân" },
+    {search : "kieuanhs10", src : "./Image/kieuanh.png", name: "Kiều Anh" },
+    {search : "ductans10", src : "./Image/ductan.png", name: "Đức Tân" },
+    {search : "vananhs10", src : "./Image/vananh.png", name: "Vân Anh" },
+    {search : "danghais10", src : "./Image/danghai.png", name: "Đăng Hải" },
+    {search : "quangduys10", src : "./Image/quangduy.png", name: "Quang Duy" },
+    {search : "haanhs10", src : "./Image/nguyentanminh.jpg", name: "Hà Anh" },
+    {search : "ngoclinhs10", src : "./Image/ngoclinh.png", name: "Ngọc Linh" },
+    {search : "nguyencongs10", src : "./Image/nguyencong.png", name: "Nguyễn Công" },
+    {search : "ngocvuongs10", src : "./Image/ngocvuong.png", name: "Ngọc Vượng" },
+    {search : "dieunhats10", src : "./Image/dieunhat.png", name: "Diệu Nhật" },
+    {search : "duychiens10", src : "./Image/duychien.png", name: "Duy Chiến" },
+    {search : "minhquangs10", src : "./Image/minhquang.png", name: "Minh Quang" },
+    {search : "phihungs10", src : "./Image/phihung.png", name: "Phi Hùng" },
+    {search : "khanhlinhs10", src : "./Image/khanhlinh.png", name: "Khánh Linh" },
+    {search : "tiendats10", src : "./Image/tiendat.png", name: "Tiến Đạt" },
+    {search : "minhhais10", src : "./Image/minhhai.png", name: "Minh Hải" },
+    {search : "huyhieus10", src : "./Image/huyhieu.png", name: "Huy Hiệu" },
+    {search : "myles10", src : "./Image/myle.png", name: "Mỹ Lệ" },
+    {search : "xuanbachs10", src : "./Image/phamxuanbach.png", name: "Xuân Bách" },
+    {search : "vanmanhs10", src : "./Image/vanmanh.png", name: "Văn Mạnh" },
+    {search : "huythais10", src : "./Image/huythai.png", name: "Huy Thái" },
+    {search : "hoangyens10", src : "./Image/hoangyen.png", name: "Hoàng Yến" },
+    {search : "dieutrucs10", src : "./Image/dieutruc.png", name: "Diệu Trúc" },
+    {search : "linhchis10", src : "./Image/linhchi.png", name: "Linh Chi" },
+    {search : "hanhuyens10", src : "./Image/hanhuyen.png", name: "Hạnh Uyên" },
+    {search : "ducdungs10", src : "./Image/ducdung.png", name: "Đức Dũng" },
+    {search : "hongquans10", src : "./Image/hongquan.png", name: "Hồng Quân" },
+    {search : "trungdungs10", src : "./Image/trungdung.png", name: "Trung Dũng" },
+    {search : "huonggiangs10", src : "./Image/huonggiang.png", name: "Hương Giang" },
+    {search : "honghas10", src : "./Image/hongha.png", name: "Hồng Hà" },
+    {search : "hieutrungs10", src : "./Image/hieutrung.png", name: "Hiếu Trung" },
+    {search : "ducanhs10", src : "./Image/ducanh.png", name: "Đức Anh" },
+    {search : "phuonguyens10", src : "./Image/phuonguyen.png", name: "Mai Uyên" },
+    {search : "ngocanhs10", src : "./Image/ngocanh.png", name: "Ngọc Ánh" },
+    {search : "hoangngocs10", src : "./Image/hoangngoc.png", name: "Hoàng Ngọc" },
+    {search : "thioanhs10", src : "./Image/thioanh.png", name: "Thị Oanh" },
+    {search : "quangvinhs10", src : "./Image/quangvinh.png", name: "Quang Vinh" },
+    {search : "thanhtungs10", src : "./Image/thanhtung.png", name: "Thanh Tùng" },
+    {search : "trongthinhs10", src : "./Image/trongthinh.png", name: "Trọng Thịnh" },
+    {search : "daiminhs10", src : "./Image/daiminh.png", name: "Đại Minh" },
+    {search : "quocdats10", src : "./Image/quocdat.png", name: "Quốc Đạt" },
     {search : "dieuquynhs9", src : "./Image/Diệu Quỳnh.png", name: "Diệu Quỳnh"},
     {search : "tiendus9", src : "./Image/Du Phạm.jpg", name: "Du Phạm"},
     {search : "hoangtrungs9", src : "./Image/Hoàng Trung.jpg", name: "Hoàng Trung"},
@@ -84,31 +126,7 @@ var dataMember = [
     {search : "duchuans4", src : "./Image/phanduchuan.png", name: "Đức Huân" },    
     {search : "nhatquangs5", src : "./Image/thnq.png", name: "Nhật Quang" },
     {search : "nhatduongs7", src : "./Image/phamnhatduong.png", name: "Nhật Dương" },
-    {search : "haivans10", src : "./Image/haivan.png", name: "Hải Vân" },
-    {search : "kieuanhs10", src : "./Image/kieuanh.png", name: "Kiều Anh" },
-    {search : "ductans10", src : "./Image/ductan.png", name: "Đức Tân" },
-    {search : "vananhs10", src : "./Image/vananh.png", name: "Vân Anh" },
-    {search : "danghais10", src : "./Image/danghai.png", name: "Đăng Hải" },
-    {search : "quangduys10", src : "./Image/quangduy.png", name: "Quang Duy" },
-    {search : "haanhs10", src : "./Image/haanh.png", name: "Hà Anh" },
-    {search : "ngoclinhs10", src : "./Image/ngoclinh.png", name: "Ngọc Linh" },
-    {search : "nguyencongs10", src : "./Image/nguyencong.png", name: "Nguyễn Công" },
-    {search : "ngocvuongs10", src : "./Image/ngocvuong.png", name: "Ngọc Vượng" },
-    {search : "dieunhats10", src : "./Image/dieunhat.png", name: "Diệu Nhật" },
-    {search : "duychiens10", src : "./Image/duychien.png", name: "Duy Chiến" },
-    {search : "minhquangs10", src : "./Image/minhquang.png", name: "Minh Quang" },
-    {search : "phihungs10", src : "./Image/phihung.png", name: "Phi Hùng" },
-    {search : "khanhlinhs10", src : "./Image/khanhlinh.png", name: "Khánh Linh" },
-    {search : "tiendats10", src : "./Image/tiendat.png", name: "Tiến Đạt" },
-
-
-
-
-
-
-
-
-
+    
 
 ]
 var dataCard = [
@@ -130,7 +148,7 @@ var HTMLimgCard = document.querySelectorAll("[data-card]")
 function submitFormForName() {
     let x = document.forms["formForName"]["fname"].value.toLowerCase()
     document.forms["formForName"]["fname"].value = ''
-    if(CurPlay.length == 12){
+    if(CurPlay.length == 18){
         alert("Enough people to play")
         return false
     }
@@ -154,11 +172,11 @@ function submitFormForName() {
         return false
     }
 }
-
+//<input type="text" name="fname" placeholder="Some card will be played" required>
 function submitFormForCard() {
     let x = document.forms["formForCard"]["fname"].value.toLowerCase()
     document.forms["formForCard"]["fname"].value = ''
-    if(CurCard.length == 12){
+    if(CurCard.length == 18){
         alert("Enough card to play")
         return false
     }
@@ -179,7 +197,7 @@ function submitFormForCard() {
 
 
 function makeImageInHTMLPlayer(i){
-    HTMLimgPlayer[CurPlay.length - 1].innerHTML = "<img class=\"rounded-circle\" data-player src=\"" + dataMember[i].src + "\"><h5>" + (CurPlay.length - 1) + ":" + dataMember[i].name + "</h5>"
+    HTMLimgPlayer[CurPlay.length - 1].innerHTML = "<img class=\"rounded-circle\" data-player src=\"" + dataMember[i].src + "\"><h5>" + (CurPlay.length) + ":" + dataMember[i].name + "</h5>"
     HTMLimgPlayer[CurPlay.length - 1].style.opacity = 1
 
 }
@@ -193,7 +211,7 @@ for(let i = 0; i < HTMLimgPlayer.length; ++i){
         if(HTMLimgPlayer[i].innerHTML == '') return
         HTMLimgPlayer[i].innerHTML = ''
         CurPlay.splice(i, 1)
-        for(let j = i; j < 11; ++j){
+        for(let j = i; j < 17; ++j){
             var indexH5 = HTMLimgPlayer[j + 1].innerHTML.indexOf("<h5>")
             var indexTwoDot = HTMLimgPlayer[j + 1].innerHTML.indexOf(":")
             if(indexH5 == -1 || indexTwoDot == -1){
@@ -204,7 +222,7 @@ for(let i = 0; i < HTMLimgPlayer.length; ++i){
             var se = HTMLimgPlayer[j + 1].innerHTML.substring(indexTwoDot, HTMLimgPlayer[j + 1].innerHTML.length)
             HTMLimgPlayer[j].innerHTML = fi + j + se
         }
-        HTMLimgPlayer[11].innerHTML = ''
+        HTMLimgPlayer[17].innerHTML = ''
         return
     })
     HTMLimgPlayer[i].addEventListener("click", () => {
@@ -218,9 +236,9 @@ for(let i = 0; i < HTMLimgCard.length; ++i){
         if(HTMLimgCard[i].innerHTML == '') return
         HTMLimgCard[i].innerHTML = ''
         CurCard.splice(i, 1)
-        for(let j = i; j < 11; ++j)
+        for(let j = i; j < 17; ++j)
             HTMLimgCard[j].innerHTML = HTMLimgCard[j + 1].innerHTML
-        HTMLimgCard[11].innerHTML = ''
+        HTMLimgCard[17].innerHTML = ''
         return
     })
     HTMLimgCard[i].addEventListener("click", () => {
@@ -233,7 +251,7 @@ for(let i = 0; i < HTMLimgCard.length; ++i){
 var slideshow = 0
 var start = 0
 var fixedSizePlayer
-HTMLslideshow = document.querySelector("[data-slideshow]")
+var HTMLslideshow = document.querySelector("[data-slideshow]")
 function addImagetToSlideShow(i){
     HTMLslideshow.innerHTML = "<img class=\"rounded-circle\" data-player src=\"" + dataMember[CurPlay[i]].src + "\">"
     HTMLslideshow.innerHTML += "<img class=\"img-thumbnail\" data-player src=\"" + dataCard[CurCard[PlayerWithWhatCard[i].id]].src + "\">"
@@ -294,3 +312,4 @@ function takeThisResult(value){
     res = document.getElementById("result");
     res.innerHTML = '';
 }
+

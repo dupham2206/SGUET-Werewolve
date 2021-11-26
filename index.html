@@ -15,7 +15,8 @@
 </head>
 
 <body>
-  <div data-players>
+  <div data-players data-top>
+    <div data-divPlayer></div>
     <div data-divPlayer></div>
     <div data-divPlayer></div>
     <div data-divPlayer></div>
@@ -25,8 +26,17 @@
         <input type="submit" value="Submit">
         <div id="result"></div>
       </form>
-      <form autocomplete="off" name="formForCard" action="javascript:void(0);" onsubmit="return submitFormForCard();return false">
-        <input type="text" name="fname" placeholder="Some card will be played" required>
+      <form name="formForCard" action="javascript:void(0);" onsubmit="return submitFormForCard();">
+        <select type="text" name="fname" data-selectCard>
+          <option value="soi">Sói</option>
+          <option value="dan">Dân</option>
+          <option value="soinguyen">Sói Nguyền</option>
+          <option value="baove">Bảo Vệ</option>
+          <option value="cupid">Cupid</option>
+          <option value="thosan">Thợ Săn</option>
+          <option value="tientri">Tiên Tri</option>
+          <option value="phuthuy">Phù Thủy</option>
+        </select>
         <input type="submit" value="Submit">
       </form>
       <button onclick="startGame()">Start</button>
@@ -34,6 +44,8 @@
     <div data-divPlayer></div>
     <div data-divPlayer></div>
     <div data-divPlayer></div>
+    <div data-divPlayer></div>
+    
   </div>
   <div data-contents>
     <div>
@@ -53,18 +65,25 @@
       <div data-card></div>
       <div data-card></div>
       <div data-card></div>
+      <div data-card></div>
+      <div data-card></div>
+      <div data-card></div>
+      <div data-card></div>
+      <div data-card></div>
+      <div data-card></div>
 
     </div>
   </div>
 
 
-  <div data-players>
+  <div data-players data-bottom>
     <div data-divPlayer></div>
     <div data-divPlayer></div>
     <div data-divPlayer></div>
-    <div>
-      <h6 style="color:aliceblue ;position: absolute; bottom: 0;">soi, soinguyen, baove, cupid, thosan, tientri, phuthuy, dan</h6>
-    </div>
+    <div data-divPlayer></div>
+    <div data-divPlayer></div>
+    <div data-divPlayer></div>
+    <div data-divPlayer></div>
     <div data-divPlayer></div>
     <div data-divPlayer></div>
     <div data-divPlayer></div>
