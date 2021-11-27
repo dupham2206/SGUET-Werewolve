@@ -5,7 +5,7 @@ var dataMember = [
     {search : "vananhs10", src : "./Image/vananh.png", name: "Vân Anh" },
     {search : "danghais10", src : "./Image/danghai.png", name: "Đăng Hải" },
     {search : "quangduys10", src : "./Image/quangduy.png", name: "Quang Duy" },
-    {search : "haanhs10", src : "./Image/nguyentanminh.jpg", name: "Hà Anh" },
+    {search : "haanhs10", src : "./Image/haanh.png", name: "Hà Anh" },
     {search : "ngoclinhs10", src : "./Image/ngoclinh.png", name: "Ngọc Linh" },
     {search : "nguyencongs10", src : "./Image/nguyencong.png", name: "Nguyễn Công" },
     {search : "ngocvuongs10", src : "./Image/ngocvuong.png", name: "Ngọc Vượng" },
@@ -126,6 +126,9 @@ var dataMember = [
     {search : "duchuans4", src : "./Image/phanduchuan.png", name: "Đức Huân" },    
     {search : "nhatquangs5", src : "./Image/thnq.png", name: "Nhật Quang" },
     {search : "nhatduongs7", src : "./Image/phamnhatduong.png", name: "Nhật Dương" },
+    {search : "quanglinhs5", src : "./Image/quanglinh.png", name: "Quang Linh" },
+
+
     
 
 ]
